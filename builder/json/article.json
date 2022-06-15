@@ -1,0 +1,47 @@
+﻿[
+  {
+    "User": {
+      "Username": "user1",
+      "Email": "email1@test.fr"
+    },
+    "Title": "Title test",
+    "Description": "Lorem ipsum ...",
+    "CreatedDate": "2022-06-13 22:15:00"
+  },
+  {
+    "User": {
+      "Username": "user1",
+      "Email": "email1@test.fr"
+    },
+    "Title": "Title test 2",
+    "Description": "Description de l'article",
+    "CreatedDate": "2022-04-12 04:45:50"
+  },
+  {
+    "User": {
+      "Username": "user1",
+      "Email": "email1@test.fr"
+    },
+    "Title": "Title test 3",
+    "Description": "Spinsmoke",
+    "CreatedDate": "2021-01-02 12:51:12"
+  },
+  {
+    "User": {
+      "Username": "user2",
+      "Email": "email2@test.fr"
+    },
+    "Title": "Title test 4",
+    "Description": "Kennen meilleur toplaner",
+    "CreatedDate": "2022-01-01 01:01:01"
+  },
+  {
+    "User": {
+      "Username": "user3",
+      "Email": "email3@test.fr"
+    },
+    "Title": "Title test 5",
+    "Description": "Rammus okey",
+    "CreatedDate": "2022-07-20 02:02:02"
+  }
+]
