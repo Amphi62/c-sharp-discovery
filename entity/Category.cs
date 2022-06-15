@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using ApplicationCsharp.exception;
 
 namespace ApplicationCsharp.entity
 {
@@ -27,14 +23,30 @@ namespace ApplicationCsharp.entity
             this.ListArticles.Add(article);
         }
 
+        public void AddArticle(List<Article> article)
+        {
+            this.ListArticles.AddRange(article);
+        }
+
         public void RemoveArticle(Article article)
         {
+            if (!this.ListArticles.Contains(article))
+            {
+                throw new NotExistException();
+            }
+
             this.ListArticles.Remove(article);
             // other method (not util in this case) : this.ListArticles = this.ListArticles.FindAll(art => art.Id != article.Id);
+
         }
 
         public void RemoveArticle(int order)
         {
+            if (order >= this.ListArticles.Count)
+            {
+                throw new IndexOutOfRangeException();
+            }
+
             this.ListArticles.RemoveAt(order);
         }
 
